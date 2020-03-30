@@ -1,0 +1,632 @@
+---- Base elements styles ----
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 99vh;
+  max-width: 100%;
+}
+
+h1 {
+  color: #222;
+}
+
+h2 {
+  color: #222;
+}
+
+h3 {
+  color: #222;
+}
+
+p {
+  color: #222;
+}
+
+a {
+  text-decoration: none; 
+}
+
+
+
+/*---- Header and Navigation base styles ----*/
+.main-header {
+  padding:2em 0 ;
+  background-color: #fff;
+}
+
+
+.name {
+   color: #222;
+   font-size: 3.5rem;
+   padding:10px 15px 5px 15px ;
+   margin: 0.5em 0 1.7em 1em;
+   width: 60%;
+   text-align:left;
+   display: block;
+   font-weight: 450;
+  letter-spacing: 1px;
+}
+
+
+
+.main-nav a {
+  text-align: center;
+  display: block;
+  color: #222;
+  font-size: 1.7em;
+  padding: 10px 10px;
+  letter-spacing: 1px;
+  
+}
+
+.main-nav a:hover,
+.project-nav a:hover,
+#caption:hover  {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.project-nav a {
+  display: none;
+}
+
+/*---- Carousel and footer base styles ----*/
+
+.main-content {
+  padding: 1em 0 0 0;
+  width: 80%;
+  margin: auto; 
+  flex: 1;
+  background-color: #fff;
+}
+
+#myCarousel {
+  display: none;
+}
+
+.mobile-flex-inner {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.mobile-image-title {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  color: white;
+}
+
+
+
+.main-footer {
+  text-align:center;
+  background-color: #222;
+  color: #d7d7d7;
+  margin-top: 2em;
+  padding:2em 0;
+  font-weight: 350;
+  font-size: ;
+}
+
+
+/*---- Project Pages styles ----*/
+
+.project-main,
+.about-main {
+  padding: 1em 3em;
+}
+
+
+.bio-title {
+  margin-bottom: 20px;
+  color: #222;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #222;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+.photo-page-link {
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: lightblue;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.bio-para,
+.about-para{
+/*  border-top: 1px solid #222;*/
+  color: #222;
+/*  display: none;*/
+  font-weight: 330;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+.iow-title {
+  padding-right: 90px;
+  line-height: 30px;
+}
+
+.project-main,
+.about-main{
+  padding: 0 0 0 0;
+}
+
+.main-images-flex {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+/*  margin: 80px 10px 10px 10px;*/
+  align-items:flex-start;
+  align-items:stretch;
+  margin: auto; 
+  width: 100%;
+  
+  
+}
+
+
+
+.image-flex{
+ width: 32%;
+ margin: 2px;
+}
+
+.image-flex-inner {
+ max-width: 100%;
+ max-height: auto;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*--- About Page Styles ---*/
+.about-para{
+  color: #222;
+  font-weight: 330;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.exhibition {
+  padding-top: 20px;
+}
+
+.list-title {
+  margin-bottom: 20px;
+  color: #222;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-right: 30px;
+  
+}
+
+.about-list {
+  color: #222;
+  font-weight: 330;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.about-list li {
+  padding-bottom: 10px;
+}
+
+
+/*--- Contact Page Styles ---*/
+
+.contact-content{
+   width: 60%;
+   margin: auto;
+   margin-top: 70px;
+   margin-bottom: 70px;
+}
+
+.contact-title {
+   color: #222;
+   font-size: 2.3em;
+   letter-spacing: 1px;
+   font-weight: 300;
+   text-align:center;
+   margin: auto;
+   padding-bottom: 10px;
+   /*border-bottom: 1px solid #222; */
+}        
+        
+.contact-para {
+   color: #222;
+   font-size: 1.3em;
+   letter-spacing: 1px;
+   text-align:center;
+   font-weight:300;
+
+}
+        
+
+
+
+
+/* =================
+Media Queries
+==================*/
+
+@media (min-width: 769px) {
+
+/*----Header and Navigation base styles----*/
+
+.main-header {
+    padding:1em 3em ;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap:wrap;
+    flex: 40%;
+    max-height:12vh;
+    align-content:space-between;
+    
+}
+
+
+.name{
+   font-size: 2.3em;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 5px 0px;
+   margin-bottom: 5px;
+   margin-top: 0px;
+   width: 60%;
+   text-align:left;
+   font-weight: 300;
+   letter-spacing: 0px;
+}
+
+.main-nav {
+  letter-spacing: 0px;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-end;
+  text-align:center;
+  flex: 40%;
+}
+
+.main-nav a {
+  font-size: 1.4em;
+  padding: 10px 10px;
+}
+
+.project-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  letter-spacing: 0px;
+  padding: 0px 0px;
+  justify-content:flex-start;
+  flex: 100%;
+}
+
+.project-nav a {
+  display:inherit;
+  color: #222;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.nav-flex {
+  align-content: center;
+  align-content:flex-start;
+  padding-right: 15px;
+  letter-spacing: 1px;
+}
+
+
+
+/*----Carousel and footer base styles----*/
+
+.main-content {
+  padding: none;
+  width: 100%;
+}
+
+.mobile-container {
+  display: none;
+}
+
+#myCarousel {
+  display: inherit;
+  height: 100%;
+}
+
+/*
+.carousel-caption {
+  transform: translatex(-40%) translateY(-30%);
+  font-size: 3em;
+  letter-spacing: 7px;
+  font-weight: 350;
+}
+*/
+
+
+.carousel-inner{
+  width:100%;
+  height: auto;
+}
+
+.item img {
+  width: 100%;
+  height: 100%; 
+  display: block;
+  position: aboslute;
+}
+
+
+/*
+.caption-header {
+  font-size: 3em;
+  letter-spacing: 7px;
+  font-weight: 300;
+  border-bottom: 1px soild white;
+}
+*/
+
+
+
+.main-footer {
+  margin-top: 0;
+  font-size: 1em;
+  font-weight: 300;
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+
+
+/*----Project Pages styles----*/
+
+.project-main,
+.about-main {
+  /*display: flex;*/
+  width: 90%;
+  margin: auto;
+}
+
+.bio {
+  flex: 1;
+  margin: 1em;
+  margin-top: 50px;
+}
+
+.bio-title {
+  border: 0px;
+  font-weight: 300;
+  padding-bottom: 0px;
+}
+
+.photo-page-link {
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+
+.bio-para {
+  display:inherit;
+  margin-left: 0px;
+}
+
+.image-flex {
+  width: 30%;
+  padding:0px 0px 0px 0px;
+}
+
+.justify-images {
+  flex: 2;
+  justify-content: center;
+}
+
+.main-images-flex {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 2;
+  margin: 20px 10px 50px 10px;
+  width: 100%;
+  justify-content: left;
+}
+
+
+.image-flex-inner{
+  display: block;
+  max-width: 100%;
+  padding: auto;
+  
+}
+
+
+.pop-over {
+  background-color:rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  cursor: pointer;
+  
+}
+
+.pop-over:hover {
+  opacity: 0.9;
+}
+
+
+
+/*---About Page ----*/
+
+.exhibition {
+  width: 95%;
+  margin: auto;
+}
+
+.about-para {
+  margin-left: 0px;
+}
+
+
+/*---Contact Page ---*/
+
+.contact-content {
+  padding-top: 130px;
+  padding-bottom: 250px;
+}
+  
+
+}
+
+@media (min-width: 1025px) {
+
+/*----Header and Navigation base styles----*/
+
+
+
+
+
+/*----Carousel and footer base styles----*/
+
+.carousel-caption {
+  transform: translatex(-50%) translateY(-30%);
+  font-size: 3em;
+  letter-spacing: 7px;
+  font-weight: 350;
+}
+
+
+/*----Project Pages styles----*/
+
+
+
+.project-main,
+.about-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo-page-link {
+  display: none;
+}
+
+
+.main-images-flex {
+  margin: 115px 10px 20px 10px;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.iow-title {
+  padding-right: 0px;
+}
+
+
+/*.bio {
+  flex: 1;
+  margin: 1em;
+}
+
+.bio-title {
+  border: 0px;
+  font-weight: 300;
+}
+
+.bio-para {
+  display:inherit;
+  
+}
+
+
+.main-images-flex {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 2;
+  margin: 80px 10px 10px 10px;
+  align-items:flex-start;
+  align-items:stretch;
+}
+
+.image-flex {
+  width: 33%;
+  padding: 0.5em;
+
+}*/
+
+
+.image-flex-inner{
+  display: block;
+  max-width: 100%;
+  padding: auto;
+  
+}
+
+.image-flex:hover > .overlay {
+/*
+    width:100%;
+    height:100%;
+*/
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    border-radius:30px;
+}
+
+/*---ABOUT PAGE ----*/
+
+.about-main {
+  margin-top: 100px;
+  margin-bottom: 140px;
+}
+
+.exhibition {
+  width: initial;
+  padding-top: 0px;
+}
+
+/*.list-title {
+  margin-top: 40px;
+}*/
+
+}
+
+/*----Clearfix----*/
+
+.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+
+
+
+

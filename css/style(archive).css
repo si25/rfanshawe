@@ -1,0 +1,314 @@
+/*Base elements styles*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: #3a3a3a;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1 {
+  
+}
+
+h2 {
+  
+}
+
+a {
+  text-decoration: none; 
+}
+
+/*====================
+BASE LAYOUT STYLES
+======================*/
+
+/*----Navigation----*/
+
+.name{
+   color: #151515;
+   font-size: 1.75em;
+   padding:10px 15px 5px 15px ;
+   margin-bottom: 0;
+ 
+}
+
+.job-title{
+  color: #a9a9a9;
+  font-size: 1.2em;
+  padding: 0 15px 10px 15px;
+  margin-top: 0;
+}
+
+.name,
+.job-title,
+.main-nav a {
+  text-align: center;
+  display: block;
+}
+
+.main-nav a {
+  color: #a9a9a9;
+  font-size: 1.3em;
+  padding: 15px 10px;
+}
+
+.main-nav a:hover {
+  color: #151515;
+}
+
+.
+
+/*---- Layout Containers ----*/
+
+.main-header {
+  padding:2em 0 ;
+}
+
+.main-content {
+  padding: 2em 0 2em 0;
+  width: 90%;
+  margin: auto; 
+  
+}
+
+.flex-container {
+  height: 20em;
+}
+
+.vid-container {
+  margin: 5px;
+  height: 90%;
+  width: 95%;
+  margin: auto;
+} 
+
+
+.film-title {
+  padding-top: 100px;
+  }
+
+.film-title,
+.btn {
+  margin-left: 40px
+}
+
+
+.main-footer {
+  text-align:center;
+  background-color: #d9e4ea;
+  color: #fff;
+  margin-top: 2em;
+  padding:2em 0;
+}
+
+/*---- Styling ----*/
+
+.film-title{
+  color: #fff;
+  
+}
+
+.btn {
+  color: #fff;
+}
+
+/*---- Portflio images -----*/
+
+.vid-container {
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-color: #eee;
+}
+
+.peter-evans {
+  background-image: url(#);
+ 
+}
+
+
+.dosa {
+  background-image: url(../img/dosa.png);
+ 
+}
+
+
+.noise {
+  background-image: url(../img/noise.png);
+ 
+}
+
+.adumunye {
+  background-image: url(../img/adumunye.png);
+ 
+}
+
+.robert {
+  background-image: url(#);
+  
+}
+
+.ben {
+  background-image: url(#);
+  background-image: url(#);
+}
+
+
+
+/*--- HIDE ---*/
+
+.btn, .film-title {
+  display: none;
+}
+
+.vid-container:hover .btn,
+.vid-container:hover .film-title {
+    display:inherit;
+}
+
+.vid-container:hover {
+  opacity: 0.8;
+}
+
+.vid-container:hover .btn,
+.vid-container:hover .film-title {
+    opacity: 1;
+}
+
+/* =================
+Media Queries
+==================*/
+
+@media (min-width: 769px) {
+
+.main-header,
+.main-nav{
+  display: flex;
+}
+
+.main-header{
+  flex-direction:column;
+  align-items: center;
+}
+
+.job-title {
+  margin-bottom:0;
+  padding-bottom: 0;
+  padding-top: 5px;
+  
+}
+
+.main-nav {
+  font-size: 0.9em;
+}
+
+.main-content {
+  padding-top: 2em;
+  margin:0 2em ;
+}
+
+ 
+.flex-container {
+  width: 50%;
+  height: 14em;
+}
+
+
+.right{
+  float: right;
+}
+
+.vid-container {
+/*  height: 70%;*/
+}
+  
+
+}
+
+@media (min-width: 1025px) {
+
+.main-header {
+  flex-direction: row;
+  justify-content: space-between;
+  padding:2em 4em ;
+ 
+}
+
+
+
+.title-objects {
+  padding-top:1.5em ;
+  flex-wrap:wrap;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.name {
+  font-size: 2.3em ;
+  letter-spacing: 7px;
+/*  font-weight: 525;*/
+
+}
+
+.job-title {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+
+.name,
+.job-title {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.main-nav {
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  margin-top: 0;
+}
+
+
+.hover:hover {
+  border-bottom: 1px solid #151515;
+
+}
+
+
+.main-content {
+  margin:0 4em ;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  width: 33.33%;
+}
+
+
+
+
+}
+
+/*----Clearfix----*/
+
+.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+
+
+
+
