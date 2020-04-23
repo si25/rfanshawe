@@ -76,6 +76,10 @@ a {
   text-decoration: none;
 }
 
+#nav {
+  margin-bottom: 0px;
+}
+
 .project-nav a {
   display: none;
 }
