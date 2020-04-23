@@ -290,7 +290,8 @@ Media Queries
 /*----Header and Navigation base styles----*/
 
 .main-header {
-    padding:1em 3em ;
+    padding:1rem 3rem 1rem 3rem;
+    margin-bottom: 14px;
     display:flex;
     flex-direction:row;
     align-items: center;
@@ -517,6 +518,9 @@ Media Queries
 
 
 /*----Carousel and footer base styles----*/
+.main-content {
+  padding-top:0px;
+}
 
 .carousel-caption {
   transform: translatex(-50%) translateY(-30%);
