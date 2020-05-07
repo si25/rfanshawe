@@ -57,7 +57,15 @@ a {
   letter-spacing: 1px;
 }
 
+.name a {
+  text-decoration: none;
+  color: #222;
+}
 
+.name a:hover {
+  text-decoration: none;
+  color: #222;
+}
 
 .main-nav a {
   text-align: center;
